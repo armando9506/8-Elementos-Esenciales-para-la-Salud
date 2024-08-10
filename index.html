@@ -1,93 +1,124 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>8 Elementos Esenciales para la Salud</title>
     <!-- Bootstrap CSS -->
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .progress-bar {
+            transition: width 0.3s ease;
+        }
+    </style>
 </head>
+
 <body>
     <div class="container mt-5">
         <h1 class="text-center mb-5">8 Elementos Esenciales para la Salud</h1>
         <div class="row">
             <!-- Elemento 1 -->
-            <div class="col-md-6 col-lg-3">
+            <div class="col-md-6 col-lg-3 mb-4">
                 <div class="card">
                     <div class="card-body">
                         <h5 class="card-title">Nutrición Equilibrada</h5>
                         <p class="card-text">Una dieta balanceada que incluye todos los grupos de alimentos.</p>
-                        <button class="btn btn-primary" onclick="obtenerData('nutricion')">Obtener Data</button>
+                        <input type="text" class="form-control mb-2" placeholder="Ingrese texto..." oninput="actualizarProgreso(this, 'progreso1')">
+                        <div class="progress">
+                            <div id="progreso1" class="progress-bar" role="progressbar" style="width: 0%;"></div>
+                        </div>
                     </div>
                 </div>
             </div>
             <!-- Elemento 2 -->
-            <div class="col-md-6 col-lg-3">
+            <div class="col-md-6 col-lg-3 mb-4">
                 <div class="card">
                     <div class="card-body">
                         <h5 class="card-title">Hidratación Adecuada</h5>
                         <p class="card-text">Beber suficiente agua para mantener la salud general.</p>
-                        <button class="btn btn-primary" onclick="obtenerData('hidratacion')">Obtener Data</button>
+                        <input type="text" class="form-control mb-2" placeholder="Ingrese texto..." oninput="actualizarProgreso(this, 'progreso2')">
+                        <div class="progress">
+                            <div id="progreso2" class="progress-bar" role="progressbar" style="width: 0%;"></div>
+                        </div>
                     </div>
                 </div>
             </div>
             <!-- Elemento 3 -->
-            <div class="col-md-6 col-lg-3">
+            <div class="col-md-6 col-lg-3 mb-4">
                 <div class="card">
                     <div class="card-body">
                         <h5 class="card-title">Ejercicio Regular</h5>
                         <p class="card-text">Actividad física regular para mantener la salud física.</p>
-                        <button class="btn btn-primary" onclick="obtenerData('ejercicio')">Obtener Data</button>
+                        <input type="text" class="form-control mb-2" placeholder="Ingrese texto..." oninput="actualizarProgreso(this, 'progreso3')">
+                        <div class="progress">
+                            <div id="progreso3" class="progress-bar" role="progressbar" style="width: 0%;"></div>
+                        </div>
                     </div>
                 </div>
             </div>
             <!-- Elemento 4 -->
-            <div class="col-md-6 col-lg-3">
+            <div class="col-md-6 col-lg-3 mb-4">
                 <div class="card">
                     <div class="card-body">
                         <h5 class="card-title">Sueño de Calidad</h5>
                         <p class="card-text">Dormir entre 7 y 9 horas por noche para una salud óptima.</p>
-                        <button class="btn btn-primary" onclick="obtenerData('sueno')">Obtener Data</button>
+                        <input type="text" class="form-control mb-2" placeholder="Ingrese texto..." oninput="actualizarProgreso(this, 'progreso4')">
+                        <div class="progress">
+                            <div id="progreso4" class="progress-bar" role="progressbar" style="width: 0%;"></div>
+                        </div>
                     </div>
                 </div>
             </div>
             <!-- Elemento 5 -->
-            <div class="col-md-6 col-lg-3">
+            <div class="col-md-6 col-lg-3 mb-4">
                 <div class="card">
                     <div class="card-body">
                         <h5 class="card-title">Manejo del Estrés</h5>
                         <p class="card-text">Gestionar el estrés mediante técnicas como la meditación.</p>
-                        <button class="btn btn-primary" onclick="obtenerData('estres')">Obtener Data</button>
+                        <input type="text" class="form-control mb-2" placeholder="Ingrese texto..." oninput="actualizarProgreso(this, 'progreso5')">
+                        <div class="progress">
+                            <div id="progreso5" class="progress-bar" role="progressbar" style="width: 0%;"></div>
+                        </div>
                     </div>
                 </div>
             </div>
             <!-- Elemento 6 -->
-            <div class="col-md-6 col-lg-3">
+            <div class="col-md-6 col-lg-3 mb-4">
                 <div class="card">
                     <div class="card-body">
                         <h5 class="card-title">Salud Mental</h5>
                         <p class="card-text">Cuidar la salud mental y mantener relaciones sociales saludables.</p>
-                        <button class="btn btn-primary" onclick="obtenerData('salud_mental')">Obtener Data</button>
+                        <input type="text" class="form-control mb-2" placeholder="Ingrese texto..." oninput="actualizarProgreso(this, 'progreso6')">
+                        <div class="progress">
+                            <div id="progreso6" class="progress-bar" role="progressbar" style="width: 0%;"></div>
+                        </div>
                     </div>
                 </div>
             </div>
             <!-- Elemento 7 -->
-            <div class="col-md-6 col-lg-3">
+            <div class="col-md-6 col-lg-3 mb-4">
                 <div class="card">
                     <div class="card-body">
                         <h5 class="card-title">Ambiente Seguro</h5>
                         <p class="card-text">Vivir en un entorno seguro y limpio.</p>
-                        <button class="btn btn-primary" onclick="obtenerData('ambiente')">Obtener Data</button>
+                        <input type="text" class="form-control mb-2" placeholder="Ingrese texto..." oninput="actualizarProgreso(this, 'progreso7')">
+                        <div class="progress">
+                            <div id="progreso7" class="progress-bar" role="progressbar" style="width: 0%;"></div>
+                        </div>
                     </div>
                 </div>
             </div>
             <!-- Elemento 8 -->
-            <div class="col-md-6 col-lg-3">
+            <div class="col-md-6 col-lg-3 mb-4">
                 <div class="card">
                     <div class="card-body">
                         <h5 class="card-title">Cuidado Preventivo</h5>
                         <p class="card-text">Realizar chequeos médicos regulares y vacunarse.</p>
-                        <button class="btn btn-primary" onclick="obtenerData('cuidado_preventivo')">Obtener Data</button>
+                        <input type="text" class="form-control mb-2" placeholder="Ingrese texto..." oninput="actualizarProgreso(this, 'progreso8')">
+                        <div class="progress">
+                            <div id="progreso8" class="progress-bar" role="progressbar" style="width: 0%;"></div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -100,10 +131,14 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
     <script>
-        function obtenerData(elemento) {
-            alert("Obteniendo información sobre: " + elemento);
-            // Aquí podrías hacer una llamada a un API o mostrar más información en la página.
+        function actualizarProgreso(input, progresoId) {
+            const maxLength = 100;
+            const length = input.value.length;
+            const progressBar = document.getElementById(progresoId);
+            const porcentaje = Math.min((length / maxLength) * 100, 100);
+            progressBar.style.width = porcentaje + '%';
         }
     </script>
 </body>
+
 </html>
