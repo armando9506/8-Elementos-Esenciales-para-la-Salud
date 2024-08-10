@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>8 Elementos Esenciales para la Salud</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="text-center mb-5">8 Elementos Esenciales para la Salud</h1>
+        <div class="row">
+            <!-- Elemento 1 -->
+            <div class="col-md-6 col-lg-3">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Nutrición Equilibrada</h5>
+                        <p class="card-text">Una dieta balanceada que incluye todos los grupos de alimentos.</p>
+                        <button class="btn btn-primary" onclick="obtenerData('nutricion')">Obtener Data</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Elemento 2 -->
+            <div class="col-md-6 col-lg-3">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Hidratación Adecuada</h5>
+                        <p class="card-text">Beber suficiente agua para mantener la salud general.</p>
+                        <button class="btn btn-primary" onclick="obtenerData('hidratacion')">Obtener Data</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Elemento 3 -->
+            <div class="col-md-6 col-lg-3">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Ejercicio Regular</h5>
+                        <p class="card-text">Actividad física regular para mantener la salud física.</p>
+                        <button class="btn btn-primary" onclick="obtenerData('ejercicio')">Obtener Data</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Elemento 4 -->
+            <div class="col-md-6 col-lg-3">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Sueño de Calidad</h5>
+                        <p class="card-text">Dormir entre 7 y 9 horas por noche para una salud óptima.</p>
+                        <button class="btn btn-primary" onclick="obtenerData('sueno')">Obtener Data</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Elemento 5 -->
+            <div class="col-md-6 col-lg-3">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Manejo del Estrés</h5>
+                        <p class="card-text">Gestionar el estrés mediante técnicas como la meditación.</p>
+                        <button class="btn btn-primary" onclick="obtenerData('estres')">Obtener Data</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Elemento 6 -->
+            <div class="col-md-6 col-lg-3">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Salud Mental</h5>
+                        <p class="card-text">Cuidar la salud mental y mantener relaciones sociales saludables.</p>
+                        <button class="btn btn-primary" onclick="obtenerData('salud_mental')">Obtener Data</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Elemento 7 -->
+            <div class="col-md-6 col-lg-3">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Ambiente Seguro</h5>
+                        <p class="card-text">Vivir en un entorno seguro y limpio.</p>
+                        <button class="btn btn-primary" onclick="obtenerData('ambiente')">Obtener Data</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Elemento 8 -->
+            <div class="col-md-6 col-lg-3">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Cuidado Preventivo</h5>
+                        <p class="card-text">Realizar chequeos médicos regulares y vacunarse.</p>
+                        <button class="btn btn-primary" onclick="obtenerData('cuidado_preventivo')">Obtener Data</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script>
+        function obtenerData(elemento) {
+            alert("Obteniendo información sobre: " + elemento);
+            // Aquí podrías hacer una llamada a un API o mostrar más información en la página.
+        }
+    </script>
+</body>
+</html>
