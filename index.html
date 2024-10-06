@@ -76,12 +76,26 @@
                             </div>
                         </div>
                     </div>
+                    <div class="container mt-5">
+                        <!-- Campo de Peso en Kilogramos -->
+                        <div class="mb-3">
+                            <label for="peso" class="form-label">Peso (kg)</label>
+                            <input type="number" id="peso" name="peso" class="form-control" placeholder="Ingresa tu peso en kg" min="10" max="999" required>
+                            <small class="form-text text-muted">El peso debe ser entre 10kg y 999kg.</small>
+                        </div>
+                    
+                        <!-- Campo de Altura en Centímetros -->
+                        <div class="mb-3">
+                            <label for="altura" class="form-label">Altura (cm)</label>
+                            <input type="number" id="altura" name="altura" class="form-control" placeholder="Ingresa tu altura en cm" min="10" max="999" required>
+                            <small class="form-text text-muted">La altura debe estar entre 10cm y 999cm.</small>
+                        </div>
+                    </div>
                     <button type="submit" class="submit-btn">Enviar</button>
                 </div>
             
         </form>
     </div>
-
 
     <!-- Bootstrap JS and dependencies -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
