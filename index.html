@@ -7,7 +7,7 @@
     <title>8 Elementos Esenciales para la Salud</title>
     <!-- Bootstrap CSS -->
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-    <title>Seleccionar Género</title>
+    <title>8 Elementos esenciales para la salud</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -59,20 +59,38 @@
 
 <body>
     <div class="container">
-        <h2>Selecciona tu género</h2>
+        
         <form>
-            <div class="gender-option">
-                <input type="radio" id="masculino" name="genero" value="masculino">
-                <label for="masculino">Masculino</label>
-            </div>
-            <div class="gender-option">
-                <input type="radio" id="femenino" name="genero" value="femenino">
-                <label for="femenino">Femenino</label>
-            </div>
-            <div class="gender-option">
-                <input type="radio" id="otro" name="genero" value="otro">
-                <label for="otro">Otro</label>
-            </div>
+            <!-- Datos Personales -->
+                <div class="form-group">
+                    <h2>Selecciona tu género</h2>
+                    <!-- Campo para seleccionar genero -->
+                    <div class="gender-option">
+                        <input type="radio" id="masculino" name="genero" value="masculino">
+                        <label for="masculino">Masculino</label>
+                    </div>
+                    <div class="gender-option">
+                        <input type="radio" id="femenino" name="genero" value="femenino">
+                        <label for="femenino">Femenino</label>
+                    </div>
+                    <div class="gender-option">
+                        <input type="radio" id="otro" name="genero" value="otro">
+                        <label for="otro">Otro</label>
+                    </div>
+                    <!-- Campo para ingresar la edad -->
+                    <div class="mb-3">
+                        <label for="edad" class="form-label">Ingresa tu edad:</label>
+                        <input type="number" class="form-control" id="edad" name="edad" min="18" max="120" required>
+                    </div>
+                     <!-- Campo para ingresar la profesión -->
+                     <div class="mb-3">
+                        <label for="profesion" class="form-label">
+                            Ingresa tu profesión:
+                            <span class="text-muted">(Ejemplo: Estudiante de Medicina, Médico, Residente, Especialista, Enfermero, Otra Profesión de la Salud)</span>
+                        </label>
+                        <input type="text" class="form-control" id="profesion" name="profesion" placeholder="Escribe tu profesión" required>
+                    </div>
+                </div>
             <button type="submit" class="submit-btn">Enviar</button>
         </form>
     </div>
