@@ -20,8 +20,10 @@
         <form>
             <!-- Datos Personales -->
                 <div class="form-group">
+                    <div id="div1" class="alert alert-primary">
                     <h2>Datos Personales</h2>
                     <div class="container mt-5">
+                       
                         <label for="genero" class="form-label">Selecciona tu género:</label>
                         <!-- Campo para seleccionar genero -->
                         <div class="gender-option">
@@ -88,6 +90,11 @@
                           <label id="resultado" class="form-label fs-4"></label>
                         </div>
                     </div>
+                   </div>
+                   <div id="div2" class="alert alert-success hidden">
+                    Este es el segundo div. Se muestra cuando se oculta el primero.
+                   </div>
+                   <button class="btn btn-primary mt-3" id="toggleBtn">Mostrar/Ocultar</button>
                     <div class="container mt-5">
                         <!-- Botón Siguiente -->
                         <button type="button" class="btn btn-primary btn-lg" onclick="actualizarProgreso('progressAgua', 25)">Siguiente</button>
@@ -103,7 +110,7 @@
                             </div>
                         </div>
                     </div>
-
+                   
                     <button type="submit" class="submit-btn">Enviar</button>
                 </div>
             
@@ -138,6 +145,23 @@
                 resultado.innerText = "Por favor completa los dos campos"; // Limpiar el resultado si faltan valores
             }
         }
+
+        const toggleBtn = document.getElementById('toggleBtn');
+        const div1 = document.getElementById('div1');
+        const div2 = document.getElementById('div2');
+
+        toggleBtn.addEventListener('click', function() {
+            // Si el primer div está visible, ocultarlo y mostrar el segundo
+            if (!div1.classList.contains('hidden')) {
+                div1.classList.add('hidden');
+                div2.classList.remove('hidden');
+            } 
+            // Si el primer div está oculto, mostrarlo y ocultar el segundo
+            else {
+                div1.classList.remove('hidden');
+                div2.classList.add('hidden');
+            }
+        });
     </script>
 </body>
 
