@@ -379,7 +379,7 @@
         let valorFinal = 0;
 
         function actualizarProgreso(idBarra, valor) {
-            let valorFinal = valorFinal + alor;
+            let valorFinal = valorFinal + valor;
             const progressBar = document.getElementById(idBarra);
             const porcentaje = Math.min(Math.max(valorFinal, 0), 100); // Limitar entre 0 y 100
             progressBar.style.width = porcentaje + '%';
