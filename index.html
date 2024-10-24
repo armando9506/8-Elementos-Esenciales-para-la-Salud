@@ -35,7 +35,7 @@
 <body>
     
     <div class="progress mt-2"  class="header">
-        <div id="progressAgua" class="progress-bar" role="progressbar" style="width: 0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">0%</div>
+        <div id="progressformulario" class="progress-bar" role="progressbar" style="width: 0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">0%</div>
     </div>
     <div class="container mt-5">
         
@@ -360,10 +360,10 @@
                     
                     <div class="container mt-5">
                         <!-- Botón Siguiente -->
-                        <button class="btn btn-primary btn-lg" onclick="actualizarProgreso('progressAgua', 30)" id="toggleBtn">Siguiente</button>
+                        <button class="btn btn-primary btn-lg" onclick="actualizarProgreso('progressformulario', 30)" id="toggleBtn">Siguiente</button>
                     </div>
                    
-                    <button type="submit" class="submit-btn">Enviar</button>
+                    
                 </div>
             
         </form>
@@ -376,8 +376,9 @@
 
     <script>
         function actualizarProgreso(idBarra, valor) {
+            let valorFinal = valorFinal + alor;
             const progressBar = document.getElementById(idBarra);
-            const porcentaje = Math.min(Math.max(valor, 0), 100); // Limitar entre 0 y 100
+            const porcentaje = Math.min(Math.max(valorFinal, 0), 100); // Limitar entre 0 y 100
             progressBar.style.width = porcentaje + '%';
             progressBar.setAttribute('aria-valuenow', porcentaje);
             progressBar.innerText = porcentaje + '%';
