@@ -403,24 +403,17 @@
 
         toggleBtn.addEventListener('click', function() {
             // Si el primer div está visible, ocultarlo y mostrar el segundo
-            if (!div1.classList.contains('hidden')) {
+                    if (!div1.classList.contains('hidden')) {
                 div1.classList.add('hidden');
                 div2.classList.remove('hidden');
-                div3.classList.remove('hidden');
-            }  else if (!div2.classList.contains('hidden')) {
+            } else if (!div2.classList.contains('hidden')) {
                 div2.classList.add('hidden');
-                div1.classList.remove('hidden');
                 div3.classList.remove('hidden');
-            } 
-            else if (!div3.classList.contains('hidden')) {
+            } else {
                 div3.classList.add('hidden');
                 div1.classList.remove('hidden');
-                div2.classList.remove('hidden');
-            } 
-            else {
-                div1.classList.remove('hidden');
-                div2.classList.add('hidden');
             }
+            
         });
     </script>
 </body>
