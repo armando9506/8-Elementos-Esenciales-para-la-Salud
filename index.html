@@ -18,15 +18,14 @@
         }
         /* Estilo para el encabezado */
         .header {
-            position: fixed; /* Fija el encabezado */
-            top: 0; /* Coloca el encabezado en la parte superior */
-            left: 0;
-            right: 0;
-            background-color: #333; /* Color de fondo */
+            background-color: #4CAF50; /* Color de fondo */
             color: white; /* Color del texto */
-            padding: 10px; /* Espaciado interno */
-            text-align: center; /* Centra el texto */
-            z-index: 1000; /* Asegura que esté por encima de otros elementos */
+            padding: 15px; /* Espaciado interno */
+            text-align: center; /* Alineación de texto */
+            position: fixed; /* Fijar el encabezado */
+            top: 0; /* Posición desde la parte superior */
+            width: 100%; /* Ancho completo */
+            z-index: 1000; /* Asegura que el encabezado esté encima */
         }
     </style>
     
@@ -34,7 +33,7 @@
 
 <body>
     
-    <div   class="header">
+    <div  class="progress mt-2" class="header">
         <div id="progressformulario" class="progress-bar" role="progressbar" style="width: 0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">0%</div>
     </div>
     <div class="container mt-5">
