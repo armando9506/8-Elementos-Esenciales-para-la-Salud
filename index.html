@@ -357,14 +357,24 @@
         const toggleBtn = document.getElementById('toggleBtn');
         const div1 = document.getElementById('div1');
         const div2 = document.getElementById('div2');
+        const div3 = document.getElementById('div3');
 
         toggleBtn.addEventListener('click', function() {
             // Si el primer div está visible, ocultarlo y mostrar el segundo
             if (!div1.classList.contains('hidden')) {
                 div1.classList.add('hidden');
                 div2.classList.remove('hidden');
+                div3.classList.remove('hidden');
+            }  else if (!div2.classList.contains('hidden')) {
+                div2.classList.add('hidden');
+                div1.classList.remove('hidden');
+                div3.classList.remove('hidden');
             } 
-            // Si el primer div está oculto, mostrarlo y ocultar el segundo
+            else if (!div3.classList.contains('hidden')) {
+                div3.classList.add('hidden');
+                div1.classList.remove('hidden');
+                div2.classList.remove('hidden');
+            } 
             else {
                 div1.classList.remove('hidden');
                 div2.classList.add('hidden');
