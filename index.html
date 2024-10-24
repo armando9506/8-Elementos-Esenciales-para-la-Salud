@@ -12,13 +12,29 @@
         .hidden {
             display: none;
         }
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        /* Estilo para el encabezado */
+        .header {
+            position: fixed; /* Fija el encabezado */
+            top: 0; /* Coloca el encabezado en la parte superior */
+            left: 0;
+            right: 0;
+            background-color: #333; /* Color de fondo */
+            color: white; /* Color del texto */
+            padding: 10px; /* Espaciado interno */
+            text-align: center; /* Centra el texto */
+            z-index: 1000; /* Asegura que esté por encima de otros elementos */
+        }
     </style>
     
 </head>
 
 <body>
     
-    <div class="progress mt-2">
+    <div class="progress mt-2"  class="header">
         <div id="progressAgua" class="progress-bar" role="progressbar" style="width: 0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">0%</div>
     </div>
     <div class="container mt-5">
@@ -342,23 +358,9 @@
 
                             </div>
                     
-                   
-
-                   <button class="btn btn-primary mt-3" id="toggleBtn">Mostrar/Ocultar</button>
                     <div class="container mt-5">
                         <!-- Botón Siguiente -->
-                        <button type="button" class="btn btn-primary btn-lg" onclick="actualizarProgreso('progressAgua', 25)">Siguiente</button>
-                    </div>
-                    <div class="container mt-5">
-                                       
-                        <!-- Elemento 1 -->
-                        <div class="form-group">
-                            <label for="inputAgua">Agua </label>
-                            <input type="number" id="inputAgua" class="form-control" placeholder="Ingrese un número del 1 al 100" oninput="actualizarProgreso('progressAgua', this.value)">
-                            <div class="progress mt-2">
-                                <div id="progressAgua" class="progress-bar" role="progressbar" style="width: 0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">0%</div>
-                            </div>
-                        </div>
+                        <button class="btn btn-primary btn-lg" onclick="actualizarProgreso('progressAgua', 30)" id="toggleBtn">Siguiente</button>
                     </div>
                    
                     <button type="submit" class="submit-btn">Enviar</button>
